@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'style/car.css' %}">
+    <title>IVECO</title>
+    <style>
+                #backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #backToTop:hover {
+    background-color: #333;
+  }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'about' %}">ABOUT</a>
+        <div class="dropdown">
+            <a href="#">Garrage</a>
+            <div class="dropdown-content">
+                <a href="{% url 'scania' %}">SCANIA</a>
+                <a href="{% url 'mercedes' %}">MECERDES</a>
+                <a href="{% url 'volvo' %}">VOLVO</a>
+                <a href="{% url 'daf' %}">DAF</a>
+                <a href="{% url 'man' %}">MAN</a>
+                <a href="{% url 'iveco' %}">IVECO</a>
+                <a href="{% url 'renault' %}">RENAULT</a>
+                <a href="{% url 'custom' %}">CUSTOM</a>
+                <a href="{% url 'heavy duties' %}">HEAVY DUTIES</a>
+                <a href="{% url 'contact_view' %}">CONTACT</a>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <div class="content">
+    <h1>Welcome to DAF garrage</h1>
+    <p> We are thrill to have you here please make your choice,<br>
+    as we are here to give you value for your money</p>
+    </div>
+    <div class="car-container">
+        <h3 class="het">Model: Iveco Hi-Way 440 6x2</h3>
+        <div class="slider" id="slider44">>
+            <img src="{% static 'images/img iveco/L440_1.jpg' %}" class="active">
+            <img src="{% static 'images/img iveco/L440_2.jpg' %}">
+            <img src="{% static 'images/img iveco/L440_5.jpg' %}">
+            <img src="{% static 'images/img iveco/L440_6.jpg' %}">
+            <img src="{% static 'images/img iveco/L440_9.jpg' %}">
+            <img src="{% static 'images/img iveco/L440_B.jpg' %}">
+            <img src="{% static 'images/img iveco/L440_IN.jpg' %}">
+            <img src="{% static 'images/img iveco/L440_IN1.jpg' %}">
+            <img src="{% static 'images/img iveco/L440_IN2.jpg' %}">
+            <img src="{% static 'images/img iveco/L440_IN3.jpg' %}">
+            <img src="{% static 'images/img iveco/L440_IN6.jpg' %}">
+            <img src="{% static 'images/img iveco/L440_IN8.jpg' %}">
+            <img src="{% static 'images/img iveco/L440_IN10.jpg' %}">                       
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider44')">Previous</button>
+            <button class="btn" onclick="nextImage('slider44')">Next</button>
+
+            <p>Description: 2020 Iveco Hi-Way 440 6x2 - Automatic transmission, Single owner,<br> 
+            IPVA 2024 paid, Refrigerator, Good tires, Padders’ seat.<br> 
+            We accept exchanges upon evaluation.<br>
+                
+            Condition: Clean and Ready for Immediate Use.<br>
+                
+            Engine power: 440HP</p>
+                
+                <h2>Price: €60,000</h2>
+
+            <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+        </div>
+    </div>
+
+    <div class="car-container">
+        <h3 class="het">Model: Iveco Stralis 440 Hi-Way 6x2</h3>
+        <div class="slider" id="slider45">
+            <img src="{% static 'images/img iveco/LIS_440_1.jpg' %}" class="active">
+            <img src="{% static 'images/img iveco/LIS_440.jpg' %}">
+            <img src="{% static 'images/img iveco/LIS440_3.jpg' %}">
+            <img src="{% static 'images/img iveco/LIS440_B.jpg' %}">
+            <img src="{% static 'images/img iveco/LIS440_ENG.jpg' %}">
+            <img src="{% static 'images/img iveco/LIS440_IN.jpg' %}">
+            <img src="{% static 'images/img iveco/LIS440_IN3.jpg' %}">
+            <img src="{% static 'images/img iveco/LIS440_IN5.jpg' %}">
+            <img src="{% static 'images/img iveco/LIS440_IN6.jpg' %}">
+            <img src="{% static 'images/img iveco/LIS440_IN7.jpg' %}">
+            <img src="{% static 'images/img iveco/LIS440_IN8.jpg' %}">
+            <img src="{% static 'images/img iveco/LIS440_IN9.jpg' %}">
+            <img src="{% static 'images/img iveco/LIS440_IN10.jpg' %}">
+            <img src="{% static 'images/img iveco/LIS440_IN11.jpg' %}">
+            <img src="{% static 'images/img iveco/LIS440_IN12.jpg' %}">
+            <img src="{% static 'images/img iveco/LIS440_T.jpg' %}">            
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider45')">Previous</button>
+            <button class="btn" onclick="nextImage('slider45')">Next</button>
+
+            <p>Description: 2022 Iveco Stralis 440 Hi-Way 6x2 - 440 HP, 218,000 km,<br> 
+                1,000 L fuel capacity, Euro 6, High cab, Automated gearbox, Air suspension.<br>
+                
+                Condition: Clean and ready for immediate use.<br>
+                
+                Engine power: 440 HP</p>
+                
+                <h2>Price: €50,000</h2>
+
+            <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+        </div>
+    </div>
+
+    <div class="car-container">
+        <h3 class="het">Model: Iveco Stralis 460 6x2</h3>
+        <div class="slider" id="slider46">
+            <img src="{% static 'images/img iveco/LIS460_1.jpg' %}" class="active">
+            <img src="{% static 'images/img iveco/LIS460_4.jpg' %}">
+            <img src="{% static 'images/img iveco/LIS460_5.jpg' %}">
+            <img src="{% static 'images/img iveco/LIS460_6.jpg' %}">
+            <img src="{% static 'images/img iveco/LIS460_7.jpg' %}">
+            <img src="{% static 'images/img iveco/LIS460_9.jpg' %}">
+            <img src="{% static 'images/img iveco/LIS460_10.jpg' %}">
+            <img src="{% static 'images/img iveco/LIS460_B.jpg' %}">
+            <img src="{% static 'images/img iveco/LIS460_IN.jpg' %}">
+            <img src="{% static 'images/img iveco/LIS460_IN1.jpg' %}">
+            <img src="{% static 'images/img iveco/LIS460_IN2.jpg' %}">
+            <img src="{% static 'images/img iveco/LIS460_IN4.jpg' %}">
+            <img src="{% static 'images/img iveco/LIS460_IN5.jpg' %}">
+            <img src="{% static 'images/img iveco/LIS460_IN7.jpg' %}">
+            <img src="{% static 'images/img iveco/LIS460_IN8.jpg' %}">
+            <img src="{% static 'images/img iveco/LIS460.jpg' %}">            
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider46')">Previous</button>
+            <button class="btn" onclick="nextImage('slider46')">Next</button>
+
+            <p>Description: 2011/12 Iveco Stralis 460 6x2 - 460 HP, Low Mileage,<br>
+                Automatic Transmission, Air Conditioning, New Interior, Good Tires, Euro V.<br>
+                
+                Condition: Clean and Ready for Immediate Use.<br>
+                
+                Engine power: 460HP</p>
+                
+                <h2>Price: €32,000</h2>
+
+            <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+        </div>
+    </div>
+
+    <div class="car-container">
+        <h3 class="het">Model: Iveco Stralis 600S44 Hi-Way 6x2</h3>
+        <div class="slider" id="slider47">
+            <img src="{% static 'images/img iveco/LIS600_1.jpg' %}" class="active">
+            <img src="{% static 'images/img iveco/LIS600_2.jpg' %}">
+            <img src="{% static 'images/img iveco/LIS600.jpg' %}">
+            <img src="{% static 'images/img iveco/LIS600_IN1.jpg' %}">
+            <img src="{% static 'images/img iveco/LIS600_IN.jpg' %}">            
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider47')">Previous</button>
+            <button class="btn" onclick="nextImage('slider47')">Next</button>
+
+            <p>Description: 2022 Iveco Stralis 600S44 Hi-Way 6x2 - 440 HP, 479,750 km,<br> 
+                Automatic Transmission, Air Deflector, Spring Suspension, Euro VI,<br> 
+                Ideal for Long-Distance Haulage.
+                
+                Condition: Clean and Ready for Immediate Use.<br>
+                
+                Engine power: 440HP</p>
+                
+                <h2>Price: €38,000</h2>
+
+            <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+        </div>
+    </div>
+
+    <div class="car-container">
+        <h3 class="het">Model: Iveco Stralis 410 6x2</h3>
+        <div class="slider" id="slider48">
+            <img src="{% static 'images/img iveco/STRA_410_1.jpg' %}" class="active">
+            <img src="{% static 'images/img iveco/STRA_410_3.jpg' %}">
+            <img src="{% static 'images/img iveco/STRA_410_4.jpg' %}">
+            <img src="{% static 'images/img iveco/STRA_410_5.jpg' %}">
+            <img src="{% static 'images/img iveco/STRA_410_B.jpg' %}">
+            <img src="{% static 'images/img iveco/STRA_410_IN.jpg' %}">
+            <img src="{% static 'images/img iveco/STRA_410_T.jpg' %}">
+            <img src="{% static 'images/img iveco/STRA_410.jpg' %}">            
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider48')">Previous</button>
+            <button class="btn" onclick="nextImage('slider48')">Next</button>
+
+            <p>Description: 2011 Iveco Stralis 410 6x2<br>
+                Reliable 6x2 configuration, Euro 5 engine, ideal for heavy-duty tasks.<br> 
+                Well-maintained with strong exterior design<br>
+                
+                Condition: ready for immediate deployment.<br>
+                
+                
+                Engine power:410HP</p>
+                
+                
+                <h2>Price: €20,000</h2>
+
+            <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+        </div>
+    </div>
+
+    <div class="car-container">
+        <h3 class="het">Model: Iveco Stralis</h3>
+        <div class="slider" id="slider49">>
+            <img src="{% static 'images/img iveco/STRA_W1.jpg' %}" class="active">
+            <img src="{% static 'images/img iveco/STRA_W.jpg' %}">
+            <img src="{% static 'images/img iveco/STRA_W3.jpg' %}">
+            <img src="{% static 'images/img iveco/STRA_W4.jpg' %}">
+            <img src="{% static 'images/img iveco/STRA_W5.jpg' %}">
+            <img src="{% static 'images/img iveco/STRA_WB.jpg' %}">
+            <img src="{% static 'images/img iveco/STRA_ENG.jpg' %}">
+            <img src="{% static 'images/img iveco/STRA_IN2.jpg' %}">
+            <img src="{% static 'images/img iveco/STRA_IN3.jpg' %}">
+            <img src="{% static 'images/img iveco/STRA_IN4.jpg' %}">
+            <img src="{% static 'images/img iveco/STRA_IN5.jpg' %}">           
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider49')">Previous</button>
+            <button class="btn" onclick="nextImage('slider49')">Next</button>
+
+            <p>Description: 2015 Iveco Stralis - 440 HP, 780,000 km,<br> 
+                2,500 L fuel capacity, Euro 6, High cab,<br> 
+                Automated gearbox, Air suspension.<br>
+                
+                Condition: Clean and ready for immediate use.<br>
+                
+                Engine power: 450HP</p>
+                
+                <h2>Price: €25,000</h2>
+
+            <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+        </div>
+    </div>
+
+    <div class="car-container">
+        <h3 class="het">Model: Iveco Stralis Hi-Way 440</h3>
+        <div class="slider" id="slider50">
+            <img src="{% static 'images/img iveco/WAY_440_1.jpg' %}" class="active">
+            <img src="{% static 'images/img iveco/WAY_440_3.jpg' %}">
+            <img src="{% static 'images/img iveco/WAY_440_5.jpg' %}">
+            <img src="{% static 'images/img iveco/WAY_440_6.jpg' %}">
+            <img src="{% static 'images/img iveco/WAY_440_9.jpg' %}">
+            <img src="{% static 'images/img iveco/WAY-440_B.jpg' %}">
+            <img src="{% static 'images/img iveco/WAY_440_B2.jpg' %}">
+            <img src="{% static 'images/img iveco/WAY_440_IN3.jpg' %}">
+            <img src="{% static 'images/img iveco/WAY_440_IN5.jpg' %}">
+            <img src="{% static 'images/img iveco/WAY_440_IN6.jpg' %}">
+            <img src="{% static 'images/img iveco/WAY_440_IN8.jpg' %}">
+            <img src="{% static 'images/img iveco/WAY_440.jpg' %}">            
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider50')">Previous</button>
+            <button class="btn" onclick="nextImage('slider50')">Next</button>
+            
+            <p>Description: 2020 Iveco Stralis Hi-Way 440 - 440 HP,<br> 
+                Mileage: Not specified, Fuel Capacity: Not specified,<br> 
+                Emissions Standard: Euro 6. Description: 6x2 configuration,<br> 
+                automatic transmission, premium leather seating, high-roof cabin,<br> 
+                air conditioning, cruise control, digital tachograph, ABS, ASR,<br> 
+                engine brake, air suspension, twin air horns, side skirts.<br>
+                
+                Condition: Working perfectly<br> 
+                
+                Engine power: 440HP</p>
+                
+                <h2>Price:  €36,000</h2>
+
+            <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+        </div>
+    </div>
+
+    <div class="car-container">
+        <h3 class="het">Model: Iveco S-Way 570</h3>
+        <div class="slider" id="slider51">
+            <img src="{% static 'images/img iveco/WAY_1.jpg' %}" class="active">
+            <img src="{% static 'images/img iveco/WAY_2.jpg' %}">
+            <img src="{% static 'images/img iveco/WAY_3.jpg' %}">
+            <img src="{% static 'images/img iveco/WAY_4.jpg' %}">
+            <img src="{% static 'images/img iveco/WAY_B.jpg' %}">
+            <img src="{% static 'images/img iveco/WAY_B2.jpg' %}">
+            <img src="{% static 'images/img iveco/WAY_IN.jpg' %}">
+            <img src="{% static 'images/img iveco/WAY_IN2.jpg' %}">
+            <img src="{% static 'images/img iveco/WAY_IN3.jpg' %}">
+            <img src="{% static 'images/img iveco/WAY_IN5.jpg' %}">
+            <img src="{% static 'images/img iveco/WAY_IN7.jpg' %}">
+            <img src="{% static 'images/img iveco/WAY_IN9.jpg' %}">">
+            <img src="{% static 'images/img iveco/WAY_IN11.jpg' %}">
+            <img src="{% static 'images/img iveco/WAY_IN13.jpg' %}">
+            <img src="{% static 'images/img iveco/WAY_LOG.jpg' %}">
+            <img src="{% static 'images/img iveco/WAY.jpg' %}">            
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider51')">Previous</button>
+            <button class="btn" onclick="nextImage('slider51')">Next</button>
+
+        <p>Description: 2021 Iveco S-Way 570 6x2 Midlift - 570 hp, 51,000 km,<br> 
+            Auto Transmission, Heated and Cooled Leather Comfort Seats, Retarder,<br> 
+            Ideal for Long Haul Transport. Price: Estimated €67,000.<br> 
+            Warranty and R&M Package until 08/06/2024.<br>
+            
+            Condition: Truck is Like New<br>
+            
+            Engine power: 570HP</p>
+            
+            <h2>Price: €45,000</h2>
+
+            <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+        </div>
+    </div>
+
+    <button id="backToTop" onclick="scrollToTop()">Top</button>
+    
+    <script src="{% static 'java/sliding.js' %}"></script>
+
+    <script>
+        // Show the button when the user scrolls down 100px from the top
+window.onscroll = function() {
+  const button = document.getElementById("backToTop");
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    button.style.display = "block";
+  } else {
+    button.style.display = "none";
+  }
+};
+
+// Scroll smoothly to the top when the button is clicked
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+    </script>
+</body>
+</html>

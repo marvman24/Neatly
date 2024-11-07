@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'style/car.css' %}">
+    <style>
+        #backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #backToTop:hover {
+    background-color: #333;
+  }
+        .container {
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            display: inline-block;
+        }
+        img {
+            border-radius: 20px;
+            height: auto;
+            width: 30px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'about' %}">ABOUT</a>
+        <div class="dropdown">
+            <a href="#">Garrage</a>
+            <div class="dropdown-content">
+                <a href="{% url 'scania' %}">SCANIA</a>
+                <a href="{% url 'mercedes' %}">MECERDES</a>
+                <a href="{% url 'volvo' %}">VOLVO</a>
+                <a href="{% url 'daf' %}">DAF</a>
+                <a href="{% url 'man' %}">MAN</a>
+                <a href="{% url 'iveco' %}">IVECO</a>
+                <a href="{% url 'renault' %}">RENAULT</a>
+                <a href="{% url 'custom' %}">CUSTOM</a>
+                <a href="{% url 'heavy duties' %}">HEAVY DUTIES</a>
+                <a href="{% url 'contact_view' %}">CONTACT</a>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <div class="content">
+    <h1>Drive Your Business Forward with Neatly Trucks intl</h1>
+
+    <p>Welcome to <strong></mark>Neatly Trucks,</mark></strong> your premier destination for top-quality trucks<br>
+         that meet the demands of your business. With years of experience in the industry,<br> 
+         we understand the importance of reliability, efficiency, and power when it comes to your fleet.
+    </p>
+    </div>
+    <div class="container">
+    <img src="{% static 'images/image/660S3.jpg' %}" style="height: 30%; width: 40%;">
+    
+    <img src="{% static 'images/img benz/ACT1851_4.jpg' %}" style="height: 30%; width: 40%;">
+</div>
+
+<div class="container">
+    <img src="{% static 'images/img daf/CF480_6.jpg' %}" style="height: 30%; width: 40%;">
+    
+    <img src="{% static 'images/img iveco/L440_1.jpg' %}" style="height: 30%; width: 40%;">
+</div>
+
+<div class="container">
+    <img src="{% static 'images/img man/TGA.jpg' %}" style="height: 30%; width: 40%;">
+    
+    <img src="{% static 'images/img renalt/C520_1.jpg' %}" style="height: 30%; width: 40%;">
+</div>
+
+<div class="container">
+    <img src="{% static 'images/img volvo/BFH500_IN2.jpg' %}" style="height: 30%; width: 40%;">
+    
+    <img src="{% static 'images/img benz/ACT2548_4.jpg' %}" style="height: 30%; width: 40%;">
+</div>
+
+<p>At Neatly Trucks intl, we pride ourselves on our commitment to excellence.<br> 
+    Our team of experts is dedicated to providing exceptional customer service,<br>  
+    ensuring that you find the perfect truck for your needs.<br>  
+    We offer a wide range of models, from lightweight pickups to heavy-duty haulers,<br>  
+    all backed by cutting-edge technology and innovative design.
+</p>
+<button id="backToTop" onclick="scrollToTop()">Top</button>
+<footer>&copy Copyright Neatly Trucks All Right Duely Reserved</footer>
+    
+    <script src="{% static 'java/sliding.js' %}"></script>
+    <script>
+        // Show the button when the user scrolls down 100px from the top
+window.onscroll = function() {
+  const button = document.getElementById("backToTop");
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    button.style.display = "block";
+  } else {
+    button.style.display = "none";
+  }
+};
+
+// Scroll smoothly to the top when the button is clicked
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+    </script>
+    
+</body>
+</html>

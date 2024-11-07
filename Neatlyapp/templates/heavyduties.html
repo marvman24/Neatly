@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'style/car.css' %}">
+    <title>HEAVY-DUTIES</title>
+    <style>
+                #backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #backToTop:hover {
+    background-color: #333;
+  }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'about' %}">ABOUT</a>
+        <div class="dropdown">
+            <a href="#">Garrage</a>
+            <div class="dropdown-content">
+                <a href="{% url 'scania' %}">SCANIA</a>
+                <a href="{% url 'mercedes' %}">MECERDES</a>
+                <a href="{% url 'volvo' %}">VOLVO</a>
+                <a href="{% url 'daf' %}">DAF</a>
+                <a href="{% url 'man' %}">MAN</a>
+                <a href="{% url 'iveco' %}">IVECO</a>
+                <a href="{% url 'renault' %}">RENAULT</a>
+                <a href="{% url 'custom' %}">CUSTOM</a>
+                <a href="{% url 'heavy duties' %}">HEAVY DUTIES</a>
+                <a href="{% url 'contact_view' %}">CONTACT</a>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <div class="content">
+    <h1>Welcome to HEAVY-DUTIES garrage</h1>
+    <p> We are thrill to have you here please make your choice,<br>
+    as we are here to give you value for your money</p>
+    </div>
+
+    <div class="car-container">
+        <h3 class="het">Model: Excavator320c</h3>
+        <div class="slider" id="slider57">
+            <img src="{% static 'images/img heavy/Excava320c_35k.jpg' %}" class="active">
+
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider57')">Previous</button>
+            <button class="btn" onclick="nextImage('slider57')">Next</button>
+
+        <h2>€38,000</h2>
+        
+            <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+        </div>
+    </div>
+
+    <div class="car-container">
+        <h3 class="het">Model: Excavator</h3>
+        <div class="slider" id="slider58">
+            <img src="{% static 'images/img heavy/Excava_40k.jpg' %}" class="active">
+            <img src="{% static 'images/img heavy/Excava_40k_eng.jpg' %}">
+
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider58')">Previous</button>
+            <button class="btn" onclick="nextImage('slider58')">Next</button>
+
+        <h2>€42,000</h2>
+        
+            <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+        </div>
+    </div>
+
+    <div class="car-container">
+        <h3 class="het">Model: Excavator325l</h3>
+        <div class="slider" id="slider59">
+            <img src="{% static 'images/img heavy/Excava325bl_25k.jpg' %}" class="active">
+            <img src="{% static 'images/img heavy/Excava325l2_25k.jpg' %}">
+            <img src="{% static 'images/img heavy/Excava325l_25k.jpg' %}">
+
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider59')">Previous</button>
+            <button class="btn" onclick="nextImage('slider59')">Next</button>
+        
+        <h2>€28,000</h2>
+        
+            <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+        </div>
+    </div>
+
+    <div class="car-container">
+        <h3 class="het">Model: Backo</h3>
+        <div class="slider" id="slider60">
+            <img src="{% static 'images/img heavy/Backo_25k.jpg' %}" class="active">
+
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider60')">Previous</button>
+            <button class="btn" onclick="nextImage('slider60')">Next</button>
+
+        <h2>€28,000</h2>
+        
+            <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+        </div>
+    </div>
+
+    <div class="car-container">
+        <h3 class="het">Model: Compactor</h3>
+        <div class="slider" id="slider61">
+            <img src="{% static 'images/img heavy/Compactor_15k.jpg' %}" class="active">
+
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider61')">Previous</button>
+            <button class="btn" onclick="nextImage('slider61')">Next</button>
+
+        <h2>€18,000</h2>
+        
+            <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+        </div>
+    </div>
+
+    <div class="car-container">
+        <h3 class="het">Model: Excavator320c</h3>
+        <div class="slider" id="slider62">
+            <img src="{% static 'images/img heavy/Excava320c_35k.jpg' %}" class="active">
+
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider62')">Previous</button>
+            <button class="btn" onclick="nextImage('slider62')">Next</button>
+
+        <h2>€38,000</h2>
+        
+            <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+        </div>
+    </div>
+
+    <div class="car-container">
+        <h3 class="het">Model: Grader 140h</h3>
+        <div class="slider" id="slider63">
+            <img src="{% static 'images/img heavy/Grader140h_45k.jpg' %}" class="active">
+
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider63')">Previous</button>
+            <button class="btn" onclick="nextImage('slider63')">Next</button>
+
+        <h2>€48,000</h2>
+        
+            <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+        </div>
+    </div>
+
+    <div class="car-container">
+        <h3 class="het">Model: Motor grader12g</h3>
+        <div class="slider" id="slider64">
+            <img src="{% static 'images/img heavy/Motor_grader12g_20k.jpg' %}" class="active">
+
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider64')">Previous</button>
+            <button class="btn" onclick="nextImage('slider64')">Next</button>
+
+        <h2>€23,000</h2>
+        
+            <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+        </div>
+    </div>
+
+    <div class="car-container">
+        <h3 class="het">Model: Motor Grader</h3>
+        <div class="slider" id="slider65">
+            <img src="{% static 'images/img heavy/Motor_grader_20k.jpg' %}" class="active">
+
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider65')">Previous</button>
+            <button class="btn" onclick="nextImage('slider65')">Next</button>
+
+        <h2>€23,000</h2>
+        
+            <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+        </div>
+    </div>
+
+    <div class="car-container">
+        <h3 class="het">Model: Pay Loader</h3>
+        <div class="slider" id="slider66">
+            <img src="{% static 'images/img heavy/Paylaoder1.jpg' %}" class="active">
+            <img src="{% static 'images/img heavy/Payloader2.jpg' %}">
+            <img src="{% static 'images/img heavy/Payloader3.jpg' %}">
+            <img src="{% static 'images/img heavy/Payloader_20k.jpg' %}">
+
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider66')">Previous</button>
+            <button class="btn" onclick="nextImage('slider66')">Next</button>
+
+        <h2>€23,000</h2>
+        
+            <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+        </div>
+    </div>
+
+    <div class="car-container">
+        <h3 class="het">Model: Pay Loader</h3>
+        <div class="slider" id="slider67">
+            <img src="{% static 'images/img heavy/Payloader_25k.jpg' %}" class="active">
+
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider67')">Previous</button>
+            <button class="btn" onclick="nextImage('slider67')">Next</button>
+
+        <h2>€28,000</h2>
+        
+            <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+        </div>
+    </div>
+
+    <div class="car-container">
+        <h3 class="het">Model: Excavator</h3>
+        <div class="slider" id="slider68">
+            <img src="{% static 'images/img heavy/Excava_35k.jpg' %}" class="active">
+
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider68')">Previous</button>
+            <button class="btn" onclick="nextImage('slider68')">Next</button>
+
+        <h2>€38,000</h2>
+        
+            <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+        </div>
+    </div>
+
+    <div class="car-container">
+        <h3 class="het">Model: D9T Doza</h3>
+        <div class="slider" id="slider69">
+            <img src="{% static 'images/img heavy/D9T_DOZA_40.jpg' %}" class="active">
+
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider69')">Previous</button>
+            <button class="btn" onclick="nextImage('slider69')">Next</button>
+
+        <h2>€40,000</h2>
+
+            <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+        </div>
+    </div>
+
+    <div class="car-container">
+        <h3 class="het">Model: Motor Grader</h3>
+        <div class="slider" id="slider70">
+            <img src="{% static 'images/img heavy/12d_motorgrader_10k.jpg' %}" class="active">
+            <img src="{% static 'images/img heavy/12d_4.jpg' %}">
+            <img src="{% static 'images/img heavy/12d_3.jpg' %}">
+            <img src="{% static 'images/img heavy/12d_.jpg' %}">
+            <img src="{% static 'images/img heavy/12d.jpg' %}">
+
+
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider70')">Previous</button>
+            <button class="btn" onclick="nextImage('slider70')">Next</button>
+
+        <h2>€12,000</h2>
+        
+            <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+        </div>
+    </div>
+
+    <button id="backToTop" onclick="scrollToTop()">Top</button>
+
+    <script src="{% static 'java/sliding.js' %}"></script> 
+
+    <script>
+        // Show the button when the user scrolls down 100px from the top
+window.onscroll = function() {
+  const button = document.getElementById("backToTop");
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    button.style.display = "block";
+  } else {
+    button.style.display = "none";
+  }
+};
+
+// Scroll smoothly to the top when the button is clicked
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+    </script>
+
+    
+</body>
+</html>

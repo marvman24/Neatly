@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ABOUT</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'style/car.css' %}">
+    <style>
+        .contents {
+            background-color: rgb(45, 42, 42);
+    color: #ddd;
+    text-align: center;
+    font-size: 18px;
+    
+}
+@media (max-width: 500px) {
+    .car-container {
+        width: 50%;
+    }
+}
+    </style>
+</head>
+<body class="contents">
+    <nav class="navbar">
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'about' %}">ABOUT</a>
+        <div class="dropdown">
+            <a href="#">Garrage</a>
+            <div class="dropdown-content">
+                <a href="{% url 'scania' %}">SCANIA</a>
+                <a href="{% url 'mercedes' %}">MECERDES</a>
+                <a href="{% url 'volvo' %}">VOLVO</a>
+                <a href="{% url 'daf' %}">DAF</a>
+                <a href="{% url 'man' %}">MAN</a>
+                <a href="{% url 'iveco' %}">IVECO</a>
+                <a href="{% url 'renault' %}">RENAULT</a>
+                <a href="{% url 'custom' %}">CUSTOM</a>
+                <a href="{% url 'heavy duties' %}">HEAVY DUTIES</a>
+                <a href="{% url 'contact_view' %}">CONTACT</a>
+
+            </div>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+
+    <p class="contents">At <strong><mark>Neatly Trucks intl,</mark></strong> we pride ourselves on our commitment to excellence.<br> 
+        Our team of experts is dedicated to providing exceptional customer services,<br>  
+        ensuring that you find the perfect truck for your needs. We offer a wide range of models,<br>  
+        from lightweight pickups to heavy-duty haulers,<br> 
+        all backed by cutting-edge technology and innovative design. <br><br>
+        <strong>- Powerful Engines:</strong> Our trucks are equipped with robust<br> 
+        engines that deliver unparalleled performance and towing capacity.<br><br>
+        <strong>- Advanced Safety Features:</strong> Stay protected on the road with our state-of-the-art<br> 
+        safety features, including lane departure warning and blind-spot detection.<br><br>
+        <strong>- Comfortable Cabs:</strong> Enjoy ergonomic design and premium<br> 
+        materials for a comfortable driving experience. <br>
+        <strong>- Durable Construction:</strong> Built to last, our trucks withstand the toughest conditions.
+    </p><br><br>
+
+    <p class="contents"><strong>Models & Inventory</strong><br>
+
+    Explore our extensive inventory of new and used trucks, including:<br>
+        
+    <strong>- Renault, Custom, Volvo, Daf etc:</strong> Ideal for city deliveries<br>
+    <strong>- Man, Iveco, Scania, Mecerdes, etc:</strong> Perfect for heavy-duty hauling<br>
+    <strong>- Chevrolet and cybertrucks:</strong> Suitable for off-road adventures<br>
+      All purpose trucks at your fingertip...<br>
+        </p>
+
+        <p class="contents"><strong>Services</strong><br>
+
+            <strong>- Financing:</strong> Flexible options to fit your budget<br>
+            <strong>- Maintenance:</strong> Regular servicing and repairs<br>
+            <strong>- Customization:</strong> Tailor your truck to meet your specific needs<br>
+            </p>
+            <br>
+
+        <a href="{% url 'contact_view' %}" class="btn"><strong>Contact Us:</strong></a>
+        
+    <marquee>
+        <img src="{% static 'images/img volvo/BFH500_IN2.jpg' %}" style="height: 20%; width: 20%;">    
+        <img src="{% static 'images/img benz/ACT2548_4.jpg' %}" style="height: 20%; width: 20%;">
+        <img src="{% static 'images/img man/TGA.jpg' %}" style="height: 20%; width: 20%;">
+        <img src="{% static 'images/img renalt/C520_1.jpg' %}" style="height: 20%; width: 20%;">
+        <img src="{% static 'images/img daf/CF480_6.jpg' %}" style="height: 20%; width: 20%;">
+        <img src="{% static 'images/img iveco/L440_1.jpg' %}" style="height: 20%; width: 20%;">
+    </marquee>
+
+    <footer>&copy Copyright Neatly Trucks All Right Duely Reserved</footer>
+</body>
+</html>

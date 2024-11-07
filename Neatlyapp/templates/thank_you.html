@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Message Sent</title>
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'style/car.css'%}">
+  <style>
+    /* Modal Background */
+  #modal-content{
+    margin-right: 250px;
+  }
+.modal {
+  /* display: flex; */
+  /* position: fixed; */
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close-button {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+  color: #aaa;
+}
+
+.close-button:hover {
+  color: #000;
+}
+  </style>
+</head>
+<body>
+  <!-- Pop-up Modal -->
+  <div id="successModal" class="modal">
+    <div class="modal-content">
+      <span class="close-button"><a href="{% url 'home'%}">×</a></span>
+      <h2>Message Sent Successfully!</h2>
+      <p><a href="{% url 'home'%}">Click here to return to the homepage.</a></p>
+    </div>
+  </div>
+  <p>Thank You For Contacting Us! We'll get back to you as soon as possible</p>
+
+
+  <script>
+    // Display the modal
+window.onload = function() {
+  const modal = document.getElementById("successModal");
+  modal.style.display = "block";
+
+  // Redirect to home page on click
+  // modal.addEventListener("click", function() {
+  //   window.location.href = "home"; // Change "/" to your homepage URL if different
+  // });
+};
+
+  </script>
+</body>
+</html>

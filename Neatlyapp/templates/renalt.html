@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'style/car.css' %}">
+    <title>RENALT</title>
+    <style>
+                #backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #backToTop:hover {
+    background-color: #333;
+  }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'about' %}">ABOUT</a>
+        <div class="dropdown">
+            <a href="#">Garrage</a>
+            <div class="dropdown-content">
+                <a href="{% url 'scania' %}">SCANIA</a>
+                <a href="{% url 'mercedes' %}">MECERDES</a>
+                <a href="{% url 'volvo' %}">VOLVO</a>
+                <a href="{% url 'daf' %}">DAF</a>
+                <a href="{% url 'man' %}">MAN</a>
+                <a href="{% url 'iveco' %}">IVECO</a>
+                <a href="{% url 'renault' %}">RENAULT</a>
+                <a href="{% url 'custom' %}">CUSTOM</a>
+                <a href="{% url 'heavy duties' %}">HEAVY DUTIES</a>
+                <a href="{% url 'contact_view' %}">CONTACT</a>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <div class="content">
+    <h1>Welcome to DAF garrage</h1>
+    <p> We are thrill to have you here please make your choice,<br>
+    as we are here to give you value for your money</p>
+    </div>
+
+    <div class="car-container">
+        <h3 class="het">Model: Renault C520 6x4</h3>
+        <div class="slider" id="slider52">
+            <img src="{% static 'images/img renalt/C520_1.jpg' %}" class="active">
+            <img src="{% static 'images/img renalt/C520.jpg' %}">
+            <img src="{% static 'images/img renalt/C520_3.jpg' %}">
+            <img src="{% static 'images/img renalt/C520_IN.jpg' %}">            
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider52')">Previous</button>
+            <button class="btn" onclick="nextImage('slider52')">Next</button>
+
+    <p>
+        Description: 2018 Renault C520 6x4 - 520 hp, <br>
+        286,093 km, Equipped with Hydraulics and PTO, <br>
+        GVW 27,000 kg, Ideal for Heavy-Duty Tasks.
+        
+        Condition: Well-Maintained and Ready for Immediate Use.
+        
+        Engine power: 520HP</p>
+        
+        <h2>Price: €40,000</h2>
+
+        <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+        </div>
+    </div>
+
+    <div class="car-container">
+        <h3 class="het">Model: Renault T Range 480</h3>
+        <div class="slider" id="slider53">
+            <img src="{% static 'images/img renalt/T480_1.jpg' %}" class="active">
+            <img src="{% static 'images/img renalt/T480_IN.jpg' %}">
+            <img src="{% static 'images/img renalt/T480_2.jpg' %}">            
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider53')">Previous</button>
+            <button class="btn" onclick="nextImage('slider53')">Next</button>
+
+    <p>
+        Description: 2021 Renault T Range 480 6x2 - 480 hp, <br>
+        379,605 km, Quality Used Truck, <br>
+        Equipped for Versatile Operations. <br>
+        Ideal Addition for Your Business.
+        
+        Condition: Ready for Immediate Use.
+        
+        Engine power:480HP</p>
+        
+        <h2>Price: €43,000</h2>
+
+        <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+        </div>
+    </div>
+
+    <div class="car-container">
+        <h3 class="het">Model: Renault T520 </h3>
+        <div class="slider" id="slider54">
+            <img src="{% static 'images/img renalt/T520_2.jpg' %}" class="active">
+            <img src="{% static 'images/img renalt/T520_1.jpg' %}">
+            <img src="{% static 'images/img renalt/T520_4.jpg' %}">
+            <img src="{% static 'images/img renalt/T520_7.jpg' %}">
+            <img src="{% static 'images/img renalt/T520_B.jpg' %}">
+            <img src="{% static 'images/img renalt/T520_IN1.jpg' %}">
+            <img src="{% static 'images/img renalt/T520_IN2.jpg' %}">
+            <img src="{% static 'images/img renalt/T520_IN3.jpg' %}">
+            <img src="{% static 'images/img renalt/T520_IN4.jpg' %}">
+            <img src="{% static 'images/img renalt/T520_IN5.jpg' %}">            
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider54')">Previous</button>
+            <button class="btn" onclick="nextImage('slider54')">Next</button>
+
+    <p> 
+        Description: 2019 Renault T520 High 6x2 Tag Axle - 520 hp, <br>
+        176,000 km, Automatic Transmission, Leather Interior, <br>
+        3 Stage Engine Brake, Durabrites, Slider, <br>
+        Twin Air Horns, Ideal for Versatile Hauling. <br>
+        Exceptional Condition
+        
+        Condition: Ready for Immediate Use.
+        
+        Engine power: 520HP</p>
+        
+        <h2>Price: €40,000</h2>
+        <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+        </div>
+    </div>
+
+    <div class="car-container">
+        <h3 class="het">Model: Renault T520 High 6x2 Midlift</h3>
+        <div class="slider" id="slider55">
+            <img src="{% static 'images/img renalt/T520_H2.jpg' %}" class="active">
+            <img src="{% static 'images/img renalt/T520_H1.jpg' %}">
+            <img src="{% static 'images/img renalt/T520_H3.jpg' %}">
+            <img src="{% static 'images/img renalt/T520_H4.jpg' %}">
+            <img src="{% static 'images/img renalt/T520_H5.jpg' %}">
+            <img src="{% static 'images/img renalt/T520_H6.jpg' %}">
+            <img src="{% static 'images/img renalt/T520_H7.jpg' %}">
+            <img src="{% static 'images/img renalt/T520_HB.jpg' %}">
+            <img src="{% static 'images/img renalt/T520_HIN.jpg' %}">
+            <img src="{% static 'images/img renalt/T520_H_IN1.jpg' %}">
+            <img src="{% static 'images/img renalt/T520_H_IN2.jpg' %}">
+            <img src="{% static 'images/img renalt/T520_H_IN3.jpg' %}">
+            <img src="{% static 'images/img renalt/T520_H_IN4.jpg' %}">
+            <img src="{% static 'images/img renalt/T520_H_IN5.jpg' %}">
+            <img src="{% static 'images/img renalt/T520_H_IN6.jpg' %}">
+            <img src="{% static 'images/img renalt/T520_H_IN7.jpg' %}">
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider55')">Previous</button>
+            <button class="btn" onclick="nextImage('slider55')">Next</button>
+
+    <p> 
+        Description:  2021 Renault T520 High 6x2 Midlift - Leather Interior, <br>
+        Hi-Shift Box, Engine Brake, Fridge, Microwave, <br>
+        Single Bunk with Rear Cupboards, Factory Sat Nav, <br>
+        DVS Camera System with Twin Monitors, Twin Air Horns, <br>
+        Top Bar with Illuminated Headboard and Twin Spots, <br>
+        Back Bar, Air Front Axle, Slider, Roof Air Con Pod, <br>
+        Durabrites, All Good Tyres, 243,318 km, <br>
+        One Year Renault Warranty Remaining.
+        
+        Condition: Truck is as NEW.
+        
+        Engine power: 520HP</p>
+        
+        <h2>Price:  €42,000</h2>
+
+        <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+        </div>
+    </div>
+
+    <div class="car-container">
+        <h3 class="het">Model: Renault T520 High</h3>
+        <div class="slider" id="slider56">
+            <img src="{% static 'images/img renalt/T520_R.jpg' %}" class="active">
+            <img src="{% static 'images/img renalt/T520_R1.jpg' %}">
+            <img src="{% static 'images/img renalt/T520_R2.jpg' %}">
+            <img src="{% static 'images/img renalt/T520_R3.jpg' %}">
+            <img src="{% static 'images/img renalt/T520_R4.jpg' %}">
+            <img src="{% static 'images/img renalt/T520_RB.jpg' %}">
+            <img src="{% static 'images/img renalt/T520_RB1.jpg' %}">            
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider56')">Previous</button>
+            <button class="btn" onclick="nextImage('slider56')">Next</button>
+
+    <p> 
+        Description: 2020 Renault T520 High 6x2 Tag Axle - 520 hp, <br>
+        Only 1,100 km, LHD, Twin Bunks, <br>
+         Equipped with Fridge and Hydraulics, <br>
+        GVW 27,000 kg, Factory Warranty Until October 2025, <br>
+        Ideal for Long-Distance Hauling.
+        
+        Condition: As New Condition and Ready for Immediate Use.
+        
+        Engine power:520HP</p>
+        
+        <h2>Price: €52,000</h2>
+
+        <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+        </div>
+    </div>
+
+    <button id="backToTop" onclick="scrollToTop()">Top</button>
+   
+    <script src="{% static 'java/sliding.js' %}"></script>
+
+    <script>
+        // Show the button when the user scrolls down 100px from the top
+window.onscroll = function() {
+  const button = document.getElementById("backToTop");
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    button.style.display = "block";
+  } else {
+    button.style.display = "none";
+  }
+};
+
+// Scroll smoothly to the top when the button is clicked
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+    </script>
+</body>
+</html>

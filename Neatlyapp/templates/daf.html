@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'style/car.css' %}">
+
+    <title>DAF</title>
+    <style>
+                #backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #backToTop:hover {
+    background-color: #333;
+  }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'about' %}">ABOUT</a>
+        <div class="dropdown">
+            <a href="#">Garrage</a>
+            <div class="dropdown-content">
+                <a href="{% url 'scania' %}">SCANIA</a>
+                <a href="{% url 'mercedes' %}">MECERDES</a>
+                <a href="{% url 'volvo' %}">VOLVO</a>
+                <a href="{% url 'daf' %}">DAF</a>
+                <a href="{% url 'man' %}">MAN</a>
+                <a href="{% url 'iveco' %}">IVECO</a>
+                <a href="{% url 'renault' %}">RENAULT</a>
+                <a href="{% url 'custom' %}">CUSTOM</a>
+                <a href="{% url 'heavy duties' %}">HEAVY DUTIES</a>
+                <a href="{% url 'contact_view' %}">CONTACT</a>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <div class="content">
+    <h1>Welcome to DAF garrage</h1>
+    <p> We are thrill to have you here please make your choice,<br>
+    as we are here to give you value for your money</p>
+    </div>
+    <div class="car-container">
+        <h3 class="het">Model: DAF CF 480</h3>
+        <div class="slider" id="slider1">
+            <img src="{% static 'images/img daf/CF480_1.jpg' %}">
+            <img src="{% static 'images/img daf/CF480_2.jpg' %}">
+            <img src="{% static 'images/img daf/CF480_jpg' %}">
+            <img src="{% static 'images/img daf/CF480_3.jpg' %}">
+            <img src="{% static 'images/img daf/CF480_6.jpg' %}" class="active">
+            <img src="{% static 'images/img daf/CF480_5.jpg' %}">
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider1')">Previous</button>
+            <button class="btn" onclick="nextImage('slider1')">Next</button>
+
+    <p>
+        Description: 2018 DAF CF 480 FAD 8x4 with Hyva 26.57SK Hooklift - 480 hp, <br>
+        Low Mileage - 175,467 km, Euro 6, Heavy-Duty 8x4 Axle Configuration, <br>
+        Pneumatic Suspension, Alcoa Aluminum Wheels, <br>
+        Ideal for Construction and Container Transport. <br>
+        Clean, Tidy, and Ready for Work.
+        
+        Condition: Working perfectly 
+        
+        Engine power: 480HP
+        
+        Price: €75,000</p>
+
+        <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+
+        </div>
+    </div>
+
+    <div class="car-container">
+        <h3 class="het">Model: DAF LF260</h3>
+        <div class="slider" id="slider2">
+            <img src="{% static 'images/img daf/LF260_1.jpg' %}">
+            <img src="{% static 'images/img daf/LF260_2.jpg' %}">
+            <img src="{% static 'images/img daf/LF260.jpg' %}" class="active">
+            <img src="{% static 'images/img daf/LF260_3.jpg' %}">
+            <img src="{% static 'images/img daf/LF260_5.jpg' %}">
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider2')">Previous</button>
+            <button class="btn" onclick="nextImage('slider2')">Next</button>
+
+    <p>
+        Description: 2019 DAF LF260 with ThermoKing<br> 
+        T-600R Refrigeration Unit - 260 hp, 382,154 km, <br>
+        Euro 6, 16,000 kg GVW, Air Suspension, AS-Tronic Gearbox, <br>
+        Foldable Anteo Tail Lift, 60 mm Insulated Walls. <br>
+        Perfect for Refrigerated Transport. Clean and Ready for Work.
+        
+        Condition: Working perfectly 
+        
+        Engine power: PACCAR PX7/ 260HP</p>
+        
+        <h2>Price: €40,000</h2>
+
+        <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+
+        </div>
+    </div>
+
+    <div class="car-container">
+        <h3 class="het">Model:  DAF XF 480</h3>
+        <div class="slider" id="slider3">
+            <img src="{% static 'images/img daf/LXF480_1.jpg' %}">
+            <img src="{% static 'images/img daf/LXF480_10.jpg' %}">
+            <img src="{% static 'images/img daf/LXF480_2.jpg' %}" class="active">
+            <img src="{% static 'images/img daf/LXF480_4.jpg' %}">
+            <img src="{% static 'images/img daf/LXF480_5.jpg' %}">
+            <img src="{% static 'images/img daf/LXF480_6.jpg' %}">
+            <img src="{% static 'images/img daf/LXF480_7.jpg' %}">
+            <img src="{% static 'images/img daf/LXF480_9.jpg' %}">
+            <img src="{% static 'images/img daf/LXF480_11.jpg' %}">
+            <img src="{% static 'images/img daf/LXF480_12.jpg' %}">
+            <img src="{% static 'images/img daf/LXF480_13.jpg' %}">
+            <img src="{% static 'images/img daf/LXF480_IN.jpg' %}">
+            <img src="{% static 'images/img daf/LXF480_IN1.jpg' %}">
+            <img src="{% static 'images/img daf/LXF480_IN4.jpg' %}">
+            <img src="{% static 'images/img daf/LXF480_IN5.jpg' %}">
+            <img src="{% static 'images/img daf/LXF480_IN6.jpg' %}">
+            <img src="{% static 'images/img daf/LXF480_IN8.jpg' %}">
+            <img src="{% static 'images/img daf/LXF480_IN9.jpg' %}">
+            <img src="{% static 'images/img daf/LXF480_IN10.jpg' %}">
+            <img src="{% static 'images/img daf/LXF480_IN11.jpg' %}">
+            <img src="{% static 'images/img daf/LXF480_IN13.jpg' %}">
+            <img src="{% static 'images/img daf/LXF480_IN14.jpg' %}">
+            <img src="{% static 'images/img daf/LXF480_IN15.jpg' %}">
+            <img src="{% static 'images/img daf/LXF480.jpg' %}">   
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider3')">Previous</button>
+            <button class="btn" onclick="nextImage('slider3')">Next</button>
+
+    <p>
+        Description: 2019 DAF XF 480 - 6x2 Show Truck, <br>
+        Special Interior, Alcoa Wheels, Steering Axle, <br>
+        Leather Seats, Music Installation, Low Mileage at 211,937 km, <br>
+        480 hp, Well Maintained, Perfect for Long-Distance<br> 
+        and Heavy-Duty Work, Clean and Tidy.
+        
+        Condition: Working perfectly 
+        
+        Engine power: PACCAR MX-13/ 480HP</p>
+        
+        <h2> €50,000</h2>
+
+        <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+
+        </div>
+    </div>
+
+    <div class="car-container">
+        <h3 class="het">Model: DAF XF 460</h3>
+        <div class="slider" id="slider4">
+            <img src="{% static 'images/img daf/WXF460_2.jpg' %}" class="active">
+            <img src="{% static 'images/img daf/WXF460_3.jpg' %}">
+            <img src="{% static 'images/img daf/WXF460_1.jpg' %}">
+            <img src="{% static 'images/img daf/WXF460.jpg' %}">            
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider4')">Previous</button>
+            <button class="btn" onclick="nextImage('slider4')">Next</button>
+
+    <p>
+        Description: 2016 DAF XF 460 - 6x2 FTG Chassis, <br>
+        Super Space Cab, 460 hp, 991,092 km, Well Maintained. <br>
+        Perfect for Long-Distance Hauls, <br>
+        Spacious and Comfortable Cab. Clean and Tidy.
+        
+        Condition: Working perfectly 
+        
+        Engine power: PACCAR MX-13/ 460HP</p>
+        
+        <h2>Price: €20,000</h2>
+
+        <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+
+        </div>
+    </div>
+
+    <div class="car-container">
+        <h3 class="het">Model: DAF XF 480</h3>
+        <div class="slider" id="slider5">
+            <img src="{% static 'images/img daf/XF_480_1.jpg' %}" class="active">
+            <img src="{% static 'images/img daf/XF_480_3.jpg' %}">
+            <img src="{% static 'images/img daf/XF_480_5.jpg' %}">
+            <img src="{% static 'images/img daf/XF_480_6.jpg' %}">
+            <img src="{% static 'images/img daf/XF_480_7.jpg' %}">
+            <img src="{% static 'images/img daf/XF480_IN1.jpg' %}">
+            <img src="{% static 'images/img daf/XF480_IN.jpg' %}">
+            <img src="{% static 'images/img daf/XF480_IN1.jpg' %}">
+            <img src="{% static 'images/img daf/XF480_IN2.jpg' %}">
+            <img src="{% static 'images/img daf/XF480_IN3.jpg' %}">
+            <img src="{% static 'images/img daf/XF480_IN4.jpg' %}">
+            <img src="{% static 'images/img daf/XF480_IN6.jpg' %}">
+            <img src="{% static 'images/img daf/XF480_IN8.jpg' %}">
+            <img src="{% static 'images/img daf/XF480_N1.jpg' %}">
+            <img src="{% static 'images/img daf/XF480_N3.jpg' %}">
+            <img src="{% static 'images/img daf/XF480_N2.jpg' %}">
+            <img src="{% static 'images/img daf/XF480.jpg' %}">                            
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider5')">Previous</button>
+            <button class="btn" onclick="nextImage('slider5')">Next</button>
+
+    <p>
+        Description: 2018 DAF XF 480 - 6x2 Show Truck, <br>
+        Top Condition, Special Interior, Leather Seats, <br>
+        Steering Pusher, Pusher Axle, LZV Truck, Sliding Dish, <br>
+        480 hp, 706,568 km, Well Maintained, <br>
+        Perfect for Long and Heavy Hauls, Clean and Tidy.
+        
+        Condition: Working perfectly 
+        
+        Engine power: PACCAR MX-13/ 480HP</p>
+        
+        <h2>Price: €45,000</h2>
+
+        <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+
+        </div>
+    </div>
+
+    <div class="car-container">
+        <h3 class="het">Model: DAF XF 460</h3>
+        <div class="slider" id="slider6">
+            <img src="{% static 'images/img daf/XF460_2.jpg' %}" class="active">            
+            <img src="{% static 'images/img daf/XF460_3.jpg' %}">
+            <img src="{% static 'images/img daf/XF460_1.jpg' %}">
+            <img src="{% static 'images/img daf/XF460_4.jpg' %}">
+            <img src="{% static 'images/img daf/XF460.jpg' %}">
+            <img src="{% static 'images/img daf/XF460_6.jpg' %}">
+            <img src="{% static 'images/img daf/XF460_5.jpg' %}">
+            <img src="{% static 'images/img daf/XF460_7.jpg' %}">
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider6')">Previous</button>
+            <button class="btn" onclick="nextImage('slider6')">Next</button>
+
+    <p>
+        Description: 2015 DAF XF 460 SSC - 4x2, Super Space Cab, <br>
+        459 hp, 12-Speed AS-Tronic, Hydraulic Installation, <br>
+        Alcoa Rims, Pneumatic Suspension, 845L Fuel Tank, <br>
+        1,031,939 km, Euro 6, Cruise Control, Digital Tachograph, <br>
+        Air Conditioning, Stationary Heater, Multicolored Exterior, <br>
+        Well Maintained. Clean and Tidy.
+        
+        Condition: Working perfectly 
+        
+        Engine power: 459HP</p>
+        
+        <h2>Price: €13,000</h2>
+        
+        <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+
+        </div>
+    </div>
+
+    <div class="car-container">
+        <h3 class="het">Model: DAF XF 530</h3>
+        <div class="slider" id="slider7">
+            <img src="{% static 'images/img daf/XF530_3.jpg' %}" class="active">
+            <img src="{% static 'images/img daf/XF530_1.jpg' %}">
+            <img src="{% static 'images/img daf/XF530_2.jpg' %}">
+            <img src="{% static 'images/img daf/XF530_4.jpg' %}">
+            <img src="{% static 'images/img daf/XF530_5.jpg' %}">
+            <img src="{% static 'images/img daf/XF530_6.jpg' %}">
+            <img src="{% static 'images/img daf/XF530_14.jpg' %}">
+            <img src="{% static 'images/img daf/XF530_15.jpg' %}">
+            <img src="{% static 'images/img daf/XF530.jpg' %}">
+            <img src="{% static 'images/img daf/XF530_IN1.jpg' %}">
+            <img src="{% static 'images/img daf/XF530_IN.jpg' %}">
+            <img src="{% static 'images/img daf/XF530_IN2.jpg' %}">
+            <img src="{% static 'images/img daf/XF530_IN6.jpg' %}">
+            <img src="{% static 'images/img daf/XF530_IN7.jpg' %}">
+            <img src="{% static 'images/img daf/XF530_IN9.jpg' %}">
+            <img src="{% static 'images/img daf/XF530_IN10.jpg' %}">
+            <img src="{% static 'images/img daf/XF530_IN11.jpg' %}">
+            <img src="{% static 'images/img daf/XF530_IN12.jpg' %}">
+            <img src="{% static 'images/img daf/XF530_IN13.jpg' %}">
+            <img src="{% static 'images/img daf/XF530_IN14.jpg' %}">
+            <img src="{% static 'images/img daf/XF530_IN15.jpg' %}">
+            <img src="{% static 'images/img daf/XF530_IN16.jpg' %}">
+            <img src="{% static 'images/img daf/XF530_IN18.jpg' %}">            
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider7')">Previous</button>
+            <button class="btn" onclick="nextImage('slider7')">Next</button>
+        
+    <p>
+        Description: 2020 DAF XF 530, Full Air Suspension, <br>
+        4x2 Axle Configuration, 530 hp, Automatic Transmission, <br>
+        318,292 km, DAF Dealer Maintained, Euro 6, Climate Control, <br>
+        ABS, Cruise Control, Power Steering, Park Assist, Airbags, EBS, <br>
+        Heating, Alarm, Anti-Slip Regulation, Electric Windows, <br>
+        Extra Passenger Seat, Radio CD, Registered 10/2020, Clean and Tidy.
+        
+        Condition: New
+        
+        Engine power: PACCAR MX-13 530HP</p>
+        
+        <h2>Price: €50,000</h2>
+
+        <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+
+        </div>
+    </div>
+
+    <div class="car-container">
+        <h3 class="het">Model:  DAF XF 480</h3>
+        <div class="slider" id="slider8">
+            <img src="{% static 'images/img daf/YXF480_3.jpg' %}">
+            <img src="{% static 'images/img daf/YXF480_1.jpg' %}">
+            <img src="{% static 'images/img daf/YXF480_2.jpg' %}" class="active">
+            <img src="{% static 'images/img daf/YXF480_6.jpg' %}">
+            <img src="{% static 'images/img daf/YXF480_5.jpg' %}">
+            <img src="{% static 'images/img daf/YXF480.jpg' %}">
+            <img src="{% static 'images/img daf/YXF480_7.jpg' %}">        
+        </div>
+        <div class="btn-container">
+            <button class="btn" onclick="prevImage('slider8')">Previous</button>
+            <button class="btn" onclick="nextImage('slider8')">Next</button>
+
+    <p>
+        Description: DAF XF 480 - 6x2 Show Truck, <br>
+        Special Interior, Low Mileage, Alcoa Wheels, <br>
+        Steering Axle, Music Installation, Leather Seats, <br>
+        480 hp, Perfect for Long-Distance Hauls. <br>
+        Dealer maintained, Well-Maintained, Clean and Tidy.
+        
+        Condition: Working perfectly 
+        
+        Engine power: PACCAR MX-13/480HP</p>
+        
+        <h2>Price: €15,000</h2>
+
+        <a href="{% url 'contact_view' %}" class="btn">Purchase/Hire</a>
+
+        </div>
+    </div>
+
+    <button id="backToTop" onclick="scrollToTop()">Top</button>
+
+    <script src="{% static 'java/sliding.js' %}"></script>
+
+    <script>
+        // Show the button when the user scrolls down 100px from the top
+window.onscroll = function() {
+  const button = document.getElementById("backToTop");
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    button.style.display = "block";
+  } else {
+    button.style.display = "none";
+  }
+};
+
+// Scroll smoothly to the top when the button is clicked
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+    </script>
+
+</body>
+</html>
